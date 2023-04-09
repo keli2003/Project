@@ -143,7 +143,7 @@ export default {
       //     label: "地址",
       //     type: "input",
       //   },
-      // ],
+      // ]
     };
   },
   methods: {
