@@ -28,6 +28,7 @@ export default {
         要带参数 name page limit name可以不填 page limit有默认值
     */
     getUserList: config => {
+        console.log('config', config);
         const { name, page = 1, limit = 20, } = param2Obj(config.url)
         console.log('name' + name, 'page' + page, '分页大小limit:' + limit)
         const mockList = List.filter(user => {

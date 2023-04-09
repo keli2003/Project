@@ -13,4 +13,5 @@ Mock.mock('/api/home/getData', homeApi.getStatisticalData)
 Mock.mock('/api/user/add', 'post', user.createUser)
 Mock.mock('/api/user/edit', 'post', user.updateUser)
 Mock.mock('/api/user/delete', 'post', user.deleteUser)
-Mock.mock('/api/user/getUser', user.getUserList)
+// 当接口出现404的时候可以给mock的接口改为正则
+Mock.mock(/api\/user\/getUser/, user.getUserList)

@@ -14,7 +14,7 @@ export const addUser = (data) => {
     // 返回新增用户的数据
     return http.post('/user/add', data)
 }
-export const editUse = (data) => {
+export const editUser = (data) => {
     // 返回修改后的用户数据
     return http.post('/user/edit', data)
 }
